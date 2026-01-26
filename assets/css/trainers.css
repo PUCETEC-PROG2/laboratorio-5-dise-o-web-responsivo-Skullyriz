@@ -1,0 +1,110 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    overflow: hidden;
+    flex: calc(33.3333% - 32px);
+    max-width: calc(33.3333% - 32px);
+    min-width: 250px;
+}
+
+.imagen {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background: linear-gradient(135deg, #f3fa77, #f38c8c);
+}
+
+.trainer-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trainer-name {
+    font-size: 18pt;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #737070;
+}
+
+.trainer-region {
+    display: inline-block;
+    padding: 6px ;
+    border-radius: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+}
+
+.trainer-status {
+ display: inline-block;
+    padding: 6px ;
+    border-radius: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.status-campeon-mundial {
+        background: linear-gradient(135deg, #af8300, #724502);
+}
+
+.status-active {
+        background: linear-gradient(135deg, #4bf665, #c768fa);
+}
+
+.status-cord {
+        background: linear-gradient(135deg, #2083f3, #0e0185);
+}
+
+.status-art{
+        background: linear-gradient(135deg, #f6fe00, #f70303);
+}
+
+.status-inves{
+        background: linear-gradient(135deg, #6a6b6b, #b5f9cd);
+}
+
+.status-champion{
+    background: linear-gradient(135deg, #03fff2, #f3fb7a);
+}
+
+.trainer-badges{
+ display: inline-block;
+    padding: 2px ;
+    border-radius: 8px;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.status-8 {
+     background: linear-gradient(135deg, #4fff03, #d87700);
+}
+
+@media screen and (max-width: 548px) {
+    .card{
+        flex: 100%;
+        max-width: 100%;
+    }
+}

@@ -84,7 +84,7 @@ min-width: 250px;
 }
 
 @media screen and (max-width: 900px) {
-   .pokrmon-card {
+   .pokemon-card {
     flex: calc(50% - 32px);
     max-width: calc(50% - 32px);
    }
