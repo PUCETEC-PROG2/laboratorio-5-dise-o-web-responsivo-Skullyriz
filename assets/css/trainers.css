@@ -26,7 +26,7 @@
     width: 100%;
     height: 250px;
     object-fit: contain;
-    background: linear-gradient(135deg, #f3fa77, #f38c8c);
+    background: linear-gradient(135deg, #f29191, #b6d4fc);
 }
 
 .trainer-info {
@@ -51,7 +51,7 @@
     font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #000000;
+    color: #00ddff;
 }
 
 .trainer-status {
@@ -90,16 +90,12 @@
 
 .trainer-badges{
  display: inline-block;
-    padding: 2px ;
-    border-radius: 8px;
-    font-size: 8px;
+    padding: 8px ;
+    border-radius: 14px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #ffffff;
-}
-
-.status-8 {
-     background: linear-gradient(135deg, #4fff03, #d87700);
+    color: #670372;
 }
 
 @media screen and (max-width: 548px) {
