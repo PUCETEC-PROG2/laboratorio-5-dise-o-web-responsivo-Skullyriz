@@ -1,38 +1,43 @@
+body {
+    background-color: #a0e1f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 16px
 }
 
-.grid{
+.trainers-grid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
-    padding: 16px 0;
+    padding: 16px 0
 }
 
-.card {
-    background-color: #ffffff;
+.trainer-card {
+    background-color: rgb(251, 255, 254); 
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgb(100, 100, 100);
     overflow: hidden;
     flex: calc(33.3333% - 32px);
-    max-width: calc(33.3333% - 32px);
+    max-width: calc(33.3333% -32px);
     min-width: 250px;
 }
 
-.imagen {
+.trainer-image {
     width: 100%;
     height: 250px;
-    object-fit: contain;
-    background: linear-gradient(135deg, #f29191, #b6d4fc);
+    object-fit:contain;
+    background: linear-gradient(135deg, #f55b5b , #ffffff);
 }
 
 .trainer-info {
     padding: 20px;
+    flex-direction:column;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -40,20 +45,29 @@
 .trainer-name {
     font-size: 18pt;
     text-transform: capitalize;
-    font-weight: 600;
-    color: #737070;
+    color: rgb(71, 71, 71);
+    padding: 6px 12px
 }
 
 .trainer-region {
-    display: inline-block;
-    padding: 6px ;
-    border-radius: 12px;
-    font-size: 12px;
-    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(32, 14, 14);
     font-weight: bold;
-    color: #00ddff;
+    margin-top: 0px;
 }
 
+.trainer-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    color: rgb(6,6,6);
+    justify-content: center;
+}
+
+.trainer-status {
+    font-size: 14px;
+    color: rgb(6,6,6)
+}
 .trainer-status {
  display: inline-block;
     padding: 6px ;
@@ -64,12 +78,11 @@
     color: #ffffff;
 }
 
-.status-campeon-mundial {
-        background: linear-gradient(135deg, #af8300, #724502);
-}
-
 .status-active {
-        background: linear-gradient(135deg, #4bf665, #c768fa);
+        background: linear-gradient(135deg, #f7f30f, #111111);
+}
+.status-lid{
+    background: linear-gradient(135deg, #117a21, #ecf574);
 }
 
 .status-cord {
@@ -86,21 +99,4 @@
 
 .status-champion{
     background: linear-gradient(135deg, #03fff2, #f3fb7a);
-}
-
-.trainer-badges{
- display: inline-block;
-    padding: 8px ;
-    border-radius: 14px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #670372;
-}
-
-@media screen and (max-width: 548px) {
-    .card{
-        flex: 100%;
-        max-width: 100%;
-    }
 }
